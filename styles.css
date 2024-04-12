@@ -1,0 +1,72 @@
+.container {
+  background-color: #fff;
+  border-radius: 10px;
+  max-width: 650px;
+  padding: 30px;
+  padding-bottom: 10px;
+  padding-top: 30px;
+  margin: 70px auto;
+
+  box-shadow: rgba(19, 20, 45, 0.08) 0px 8px 8px 0;
+}
+body {
+  background-image: url("back.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Space Grotesk", sans-serif;
+}
+h1 {
+  font-size: 38px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 0;
+}
+.logo {
+  position: relative;
+  top: -85px;
+  left: 555px;
+}
+
+#select-cities {
+  width: 100%;
+  font-size: 16px;
+  background-color: white;
+  border-color: rgb(236, 192, 169);
+  padding: 15px;
+  line-height: 1;
+  border-radius: 5px;
+  transition: all 200ms ease-in-out;
+  margin-bottom: 10px;
+}
+#select-cities:hover {
+  background-color: #d9dad3;
+}
+
+footer {
+  text-align: center;
+  font-weight: bold;
+}
+
+.city {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+}
+.time {
+  font-size: 48px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.time small {
+  font-size: 24px;
+  vertical-align: middle;
+  line-height: 48px;
+}
+h2 {
+  font-size: 30px;
+  margin-bottom: 3px;
+}
+.date {
+  margin-bottom: 20px;
+}
