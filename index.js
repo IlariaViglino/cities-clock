@@ -28,44 +28,6 @@ displayCityTimeLosAngeles();
 setInterval(displayCityTimeLondon,1000);
 setInterval(displayCityTimeLosAngeles,1000);
 
-//function cityTime(city) {
-  //let cityDate = city.querySelector(".date");
-  //let currentCityDate = moment().format("MMMM Do, YYYY");
-  //cityDate.innerHTML = currentCityDate;
-  //let cityTime = city.querySelector(".time");
-  //displayCityTime(city);
-  //setInterval(displayCityTime, 1000, city);
-//}
-//cityTime(londonElement);
-//cityTime(losAngelesElement);
-
-//function updateCity(event) {
-//if (event.target.value.length > 0) {
-//let cityTimeZone = event.target.value;
-//if (cityTimeZone === "current") {
-//cityTimeZone = moment.tz.guess();
-//}
-//let cityName = cityTimeZone.replace("_", " ").split("/")[1];
-//let cityTime = moment().tz(cityTimeZone);
-//let citiesElement = document.querySelector("#cities");
-//citiesElement.innerHTML = `<div class="city">
-//      <div>
-//<h2>${cityName}</h2>
-//<div class="date">${cityTime.format("MMMM Do, YYYY")}</div>
-//</div>
-//<div class="time">${cityTime.format(
-// "H:mm:ss [<small>]A[</small>]"
-//)}</div>
-//</div>
-//<div>
-//<a href="https://world-clockish.netlify.app/">All cities</a>
-//</div>
-//`;
-//}
-//}
-
-//let citiesSelect = document.querySelector("#select-cities");
-//citiesSelect.addEventListener("change", updateCity);
 
 function capitalizeFirstLetter(string) {
   //string = string.replaceAll(" ", "");
