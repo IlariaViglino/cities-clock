@@ -4,9 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.45/moment-timezone-with-data-1970-2030.min.js"></script>
     <title>WorldClock</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="styles.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
       rel="stylesheet"
@@ -17,33 +19,22 @@
       <h1>World Clock</h1>
       <img class="logo" src="SheCodes.png" width="100" />
 
-      <select id="select-cities">
-        <option value="select">Select a city...</option>
-        <option value="current">Current location</option>
-        <option value="Europe/Paris">Paris</option>
-        <option value="Australia/Sydney">Sydney</option>
-        <option value="America/New_York">New York</option>
-        <option value="Asia/Tokyo">Tokyo</option>
-      </select>
+      <form class="enter-city-form">
+        <input
+          type="search"
+          placeholder="Enter a city..."
+          required
+          id="search-input"
+        />
+        <input type="submit" value="Search" id="submit-button" />
+      </form>
 
       <div id="cities">
-        <div class="city" id="losAngeles">
-          <div>
-            <h2>Los Angeles</h2>
-            <div class="date"></div>
-          </div>
-          <div class="time"></div>
-        </div>
-
-        <div class="city" id="london">
-          <div>
-            <h2>London</h2>
-            <div class="date"></div>
-          </div>
-          <div class="time"></div>
-        </div>
+<div class="city" id="losAngeles"></div>
+<div class="city" id="london"></div>
+       
       </div>
-      <br />
+      <br/>
     </div>
 
     <footer>
@@ -58,6 +49,6 @@
       and hosted on
       <a href="https://world-clockish.netlify.app/" target="_blank">Netlify</a>
     </footer>
-    <script src="javascript/index.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
